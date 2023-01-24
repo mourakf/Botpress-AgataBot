@@ -1,0 +1,57 @@
+[
+  {
+    "id": "builtin_text-RrS23H",
+    "formData": {
+      "text$en": "{{temp.response.body.fact}}",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-04T18:47:53.035Z",
+    "modifiedOn": "2023-01-04T19:44:25.464Z"
+  },
+  {
+    "id": "builtin_text-ZNLDtp",
+    "formData": {
+      "text$en": "Would you like to know a random fact about cats?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-24T18:56:08.307Z",
+    "modifiedOn": "2023-01-24T19:37:09.715Z"
+  },
+  {
+    "id": "builtin_text-s5JoTW",
+    "formData": {
+      "text$en": "Well, hope you get back soon!",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-24T19:09:19.779Z",
+    "modifiedOn": "2023-01-24T19:09:19.779Z"
+  },
+  {
+    "id": "builtin_text-gt-11D",
+    "formData": {
+      "text$en": "Hello! I'm Agata, a virtual cat assistent.",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-24T19:12:10.800Z",
+    "modifiedOn": "2023-01-24T20:37:39.618Z"
+  },
+  {
+    "id": "builtin_text-fq9Iy-",
+    "formData": {
+      "text$en": "What's your name?",
+      "markdown$en": true,
+      "typing$en": true
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-24T19:31:15.556Z",
+    "modifiedOn": "2023-01-24T19:31:15.556Z"
+  }
+]

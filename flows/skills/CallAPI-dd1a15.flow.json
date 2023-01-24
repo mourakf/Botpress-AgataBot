@@ -1,0 +1,31 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "next": []
+  },
+  "startNode": "entry",
+  "skillData": {
+    "method": "get",
+    "memory": "temp",
+    "randomId": "XIeVhXAw_t",
+    "body": "",
+    "url": "https://catfact.ninja/fact",
+    "variable": "response",
+    "invalidJson": false
+  },
+  "nodes": [
+    {
+      "name": "entry",
+      "onEnter": [
+        "basic-skills/call_api {\"randomId\":\"XIeVhXAw_t\",\"url\":\"https://catfact.ninja/fact\",\"method\":\"get\",\"body\":\"\",\"memory\":\"temp\",\"variable\":\"response\"}"
+      ],
+      "next": [
+        {
+          "condition": "true",
+          "node": "#"
+        }
+      ],
+      "id": "320241"
+    }
+  ]
+}

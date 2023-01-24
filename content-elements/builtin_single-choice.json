@@ -1,0 +1,26 @@
+[
+  {
+    "id": "builtin_single-choice-Uvcn9j",
+    "formData": {
+      "dropdownPlaceholder$en": "",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "yes"
+        },
+        {
+          "title": "No",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "isDropdown$en": false,
+      "text$en": "{{session.name}}, would you like to know a random fact about cats?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-24T18:57:38.946Z",
+    "modifiedOn": "2023-01-24T19:52:14.189Z"
+  }
+]

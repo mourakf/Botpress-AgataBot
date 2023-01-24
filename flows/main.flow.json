@@ -1,0 +1,118 @@
+{
+  "version": "0.0.1",
+  "catchAll": {
+    "onReceive": [],
+    "next": []
+  },
+  "startNode": "entry",
+  "nodes": [
+    {
+      "id": "entry",
+      "name": "entry",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "choice-2938be"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-gt-11D",
+        "say #!builtin_text-fq9Iy-"
+      ],
+      "onReceive": [
+        "builtin/setVariable {\"type\":\"session\",\"name\":\"name\",\"value\":\"{{event.preview}}\"}"
+      ]
+    },
+    {
+      "id": "b6c46dc8c5",
+      "name": "node-aa35",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-RrS23H"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    },
+    {
+      "id": "skill-dd1a15",
+      "type": "skill-call",
+      "skill": "CallAPI",
+      "name": "CallAPI-dd1a15",
+      "flow": "skills/CallAPI-dd1a15.flow.json",
+      "next": [
+        {
+          "caption": "On success",
+          "condition": "temp.valid_XIeVhXAw_t",
+          "node": "node-aa35"
+        },
+        {
+          "caption": "On failure",
+          "condition": "!temp.valid_XIeVhXAw_t",
+          "conditionType": "raw",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "skill-2938be",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "choice-2938be",
+      "flow": "skills/choice-2938be.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-21sk6c1jor'] == \"yes\"",
+          "node": "CallAPI-dd1a15"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-21sk6c1jor'] == \"no\"",
+          "node": "Goodbye"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
+    },
+    {
+      "id": "8f7c865276",
+      "name": "Goodbye",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        },
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "END"
+        }
+      ],
+      "onEnter": [
+        "say #!builtin_text-s5JoTW"
+      ],
+      "onReceive": null,
+      "type": "standard"
+    }
+  ]
+}
