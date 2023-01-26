@@ -29,18 +29,18 @@
   "languages": [
     "en"
   ],
-  "id": "test",
+  "id": "Agata",
   "messaging": {
-    "clientId": "58d78054-14cb-403f-9c3a-063658cfa89e",
-    "clientToken": "ace29a6d-39ca-4841-8ff3-68cd702b7e02.0NhU/VWoOs/Sokr1+33NGeryo8eTvbrHS5/ra3os97oGdIIaCd/E0XOdnGs4Qnnt5K6gSSgvMhYeANwOPcTW9pd2",
+    "clientId": "272a2460-bc5c-4865-8756-7bb645325be4",
+    "clientToken": "14e44ee3-efd1-4521-a00f-8588606cddb0.5ydPk3C603/sE85hJ0JVhwdLHsSuPT7bimidn9rKk3X/883QoHpZShXluUobLU73b+5zQN5f3WoF0IXplymS458e",
     "channels": {},
-    "webhookToken": "IfsqQQ2e02keub1swKhVA7QzNABQ2x56PcT0b4XL4dYLlVun2BatyJeLF7ViMc9zIBzvp/ESQa93oqrjWw4+GWQ+"
+    "webhookToken": "kQQY/8z25gRTdPellt/nmaRGD3wAaR0GKlPkTPJNgGx8bbrZeRcKzUakOeNQa/zKEg3VwGJXRXIe1vvpaiTsK9yL"
   },
   "cloud": {
-    "botId": "a6b3130e-a272-49e2-a6d7-20e7ba964881",
+    "botId": "6c74a202-3bb4-4cd2-a612-be3e122eaf74",
     "workspaceId": "76457047-a252-4998-a073-f7e21557cd78"
   },
   "nluModels": {
-    "en": "ca783fe4b6bc9f36.b2eeb23efb448373.5748.en"
+    "en": "ca783fe4b6bc9f36.b2eeb23efb448373.4273.en"
   }
 }
