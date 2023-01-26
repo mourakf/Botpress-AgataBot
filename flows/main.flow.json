@@ -13,7 +13,7 @@
         {
           "condition": "true",
           "conditionType": "always",
-          "node": "choice-2938be"
+          "node": "Get-a-fact"
         }
       ],
       "onEnter": [
@@ -26,12 +26,12 @@
     },
     {
       "id": "b6c46dc8c5",
-      "name": "node-aa35",
+      "name": "Cat-Fact-API-response",
       "next": [
         {
           "condition": "true",
           "conditionType": "always",
-          "node": "END"
+          "node": "Know-More"
         },
         {
           "condition": "true",
@@ -55,7 +55,7 @@
         {
           "caption": "On success",
           "condition": "temp.valid_XIeVhXAw_t",
-          "node": "node-aa35"
+          "node": "Cat-Fact-API-response"
         },
         {
           "caption": "On failure",
@@ -71,7 +71,7 @@
       "id": "skill-2938be",
       "type": "skill-call",
       "skill": "choice",
-      "name": "choice-2938be",
+      "name": "Get-a-fact",
       "flow": "skills/choice-2938be.flow.json",
       "next": [
         {
@@ -113,6 +113,35 @@
       ],
       "onReceive": null,
       "type": "standard"
+    },
+    {
+      "id": "skill-0efd22",
+      "type": "skill-call",
+      "skill": "choice",
+      "name": "Know-More",
+      "flow": "skills/choice-0efd22.flow.json",
+      "next": [
+        {
+          "caption": "User picked [yes]",
+          "condition": "temp['skill-choice-ret-DUpYNz-k8R'] == \"yes\"",
+          "conditionType": "raw",
+          "node": "CallAPI-dd1a15"
+        },
+        {
+          "caption": "User picked [no]",
+          "condition": "temp['skill-choice-ret-DUpYNz-k8R'] == \"no\"",
+          "conditionType": "raw",
+          "node": "Goodbye"
+        },
+        {
+          "caption": "On failure",
+          "condition": "true",
+          "conditionType": "always",
+          "node": "##"
+        }
+      ],
+      "onEnter": null,
+      "onReceive": null
     }
   ]
 }
