@@ -5,8 +5,8 @@
   },
   "startNode": "entry",
   "skillData": {
-    "randomId": "DUpYNz-k8R",
-    "contentId": "builtin_single-choice-Uvcn9j",
+    "randomId": "ncxyruy7ma",
+    "contentId": "builtin_single-choice-O9pxY2",
     "invalidContentId": "",
     "keywords": {
       "yes": [
@@ -28,7 +28,7 @@
     {
       "name": "entry",
       "onEnter": [
-        "say #!builtin_single-choice-Uvcn9j {\"skill\":\"choice\"}"
+        "say #!builtin_single-choice-O9pxY2 {\"skill\":\"choice\"}"
       ],
       "next": [
         {
@@ -36,16 +36,16 @@
           "node": "parse"
         }
       ],
-      "id": "319084"
+      "id": "538507"
     },
     {
       "name": "parse",
       "onReceive": [
-        "basic-skills/choice_parse_answer {\"randomId\":\"DUpYNz-k8R\",\"contentId\":\"builtin_single-choice-Uvcn9j\",\"invalidContentId\":\"\",\"keywords\":{\"yes\":[\"yes\",\"Yes\"],\"no\":[\"no\",\"No\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
+        "basic-skills/choice_parse_answer {\"randomId\":\"ncxyruy7ma\",\"contentId\":\"builtin_single-choice-O9pxY2\",\"invalidContentId\":\"\",\"keywords\":{\"yes\":[\"yes\",\"Yes\"],\"no\":[\"no\",\"No\"]},\"config\":{\"nbMaxRetries\":3,\"repeatChoicesOnInvalid\":false,\"variableName\":\"\"}}"
       ],
       "next": [
         {
-          "condition": "temp['skill-choice-valid-DUpYNz-k8R'] === true",
+          "condition": "temp['skill-choice-valid-ncxyruy7ma'] === true",
           "node": "#"
         },
         {
@@ -54,16 +54,16 @@
         }
       ],
       "onEnter": [],
-      "id": "997185"
+      "id": "493959"
     },
     {
       "name": "invalid",
       "onEnter": [
-        "basic-skills/choice_invalid_answer {\"randomId\":\"DUpYNz-k8R\"}"
+        "basic-skills/choice_invalid_answer {\"randomId\":\"ncxyruy7ma\"}"
       ],
       "next": [
         {
-          "condition": "Number(temp['skill-choice-invalid-count-DUpYNz-k8R']) > Number(3)",
+          "condition": "Number(temp['skill-choice-invalid-count-ncxyruy7ma']) > Number(3)",
           "node": "#"
         },
         {
@@ -71,7 +71,7 @@
           "node": "sorry"
         }
       ],
-      "id": "642102"
+      "id": "592760"
     },
     {
       "name": "sorry",
@@ -82,7 +82,7 @@
           "node": "parse"
         }
       ],
-      "id": "404492"
+      "id": "579271"
     }
   ]
 }

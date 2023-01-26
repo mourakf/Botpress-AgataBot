@@ -17,10 +17,33 @@
       "disableFreeText$en": true,
       "typing$en": true,
       "isDropdown$en": false,
-      "text$en": "Would you like to know one more fact?"
+      "text$en": "Would you like to know a fact about cats?"
     },
     "createdBy": "admin",
     "createdOn": "2023-01-24T18:57:38.946Z",
-    "modifiedOn": "2023-01-26T13:26:14.912Z"
+    "modifiedOn": "2023-01-26T18:40:31.243Z"
+  },
+  {
+    "id": "builtin_single-choice-O9pxY2",
+    "formData": {
+      "dropdownPlaceholder$en": "Select...",
+      "choices$en": [
+        {
+          "title": "Yes",
+          "value": "yes"
+        },
+        {
+          "title": "No",
+          "value": "no"
+        }
+      ],
+      "markdown$en": true,
+      "disableFreeText$en": true,
+      "typing$en": true,
+      "text$en": "Want to know one more fact?"
+    },
+    "createdBy": "admin",
+    "createdOn": "2023-01-26T19:04:34.545Z",
+    "modifiedOn": "2023-01-26T19:04:34.545Z"
   }
 ]

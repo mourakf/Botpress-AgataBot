@@ -31,7 +31,7 @@
         {
           "condition": "true",
           "conditionType": "always",
-          "node": "Know-More"
+          "node": ""
         },
         {
           "condition": "true",
@@ -115,28 +115,25 @@
       "type": "standard"
     },
     {
-      "id": "skill-0efd22",
+      "id": "skill-b0dc6d",
       "type": "skill-call",
       "skill": "choice",
-      "name": "Know-More",
-      "flow": "skills/choice-0efd22.flow.json",
+      "name": "choice-b0dc6d",
+      "flow": "skills/choice-b0dc6d.flow.json",
       "next": [
         {
           "caption": "User picked [yes]",
-          "condition": "temp['skill-choice-ret-DUpYNz-k8R'] == \"yes\"",
-          "conditionType": "raw",
+          "condition": "temp['skill-choice-ret-ncxyruy7ma'] == \"yes\"",
           "node": "CallAPI-dd1a15"
         },
         {
           "caption": "User picked [no]",
-          "condition": "temp['skill-choice-ret-DUpYNz-k8R'] == \"no\"",
-          "conditionType": "raw",
+          "condition": "temp['skill-choice-ret-ncxyruy7ma'] == \"no\"",
           "node": "Goodbye"
         },
         {
           "caption": "On failure",
           "condition": "true",
-          "conditionType": "always",
           "node": "##"
         }
       ],
