@@ -41,21 +41,43 @@
         "x": -5,
         "y": 1400
       }
+    },
+    {
+      "id": "cf297eb34f",
+      "position": {
+        "x": 354.53846153846155,
+        "y": -507.94598416289597
+      }
     }
   ],
   "links": [
     {
-      "source": "entry",
+      "source": "cf297eb34f",
       "sourcePort": "out0",
       "target": "skill-2938be",
+      "points": [
+        {
+          "x": 555,
+          "y": -370
+        },
+        {
+          "x": -9,
+          "y": -133
+        }
+      ]
+    },
+    {
+      "source": "entry",
+      "sourcePort": "out0",
+      "target": "cf297eb34f",
       "points": [
         {
           "x": 176,
           "y": -513
         },
         {
-          "x": -9,
-          "y": -133
+          "x": 355,
+          "y": -491
         }
       ]
     },

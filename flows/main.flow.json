@@ -13,7 +13,7 @@
         {
           "condition": "true",
           "conditionType": "always",
-          "node": "Get-a-fact"
+          "node": "action-CapitalizeName"
         }
       ],
       "onEnter": [
@@ -139,6 +139,22 @@
       ],
       "onEnter": null,
       "onReceive": null
+    },
+    {
+      "id": "cf297eb34f",
+      "name": "action-CapitalizeName",
+      "next": [
+        {
+          "condition": "true",
+          "conditionType": "always",
+          "node": "Get-a-fact"
+        }
+      ],
+      "onEnter": [
+        "capitalizeName {\"name\":\"{{session.name}}\",\"value\":\"\"}"
+      ],
+      "onReceive": null,
+      "type": "standard"
     }
   ]
 }
