@@ -31,7 +31,7 @@
         {
           "condition": "true",
           "conditionType": "always",
-          "node": ""
+          "node": "choice-b0dc6d"
         },
         {
           "condition": "true",

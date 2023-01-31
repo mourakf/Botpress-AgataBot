@@ -31,10 +31,10 @@
   ],
   "id": "Agata",
   "messaging": {
-    "clientId": "b208f193-875d-48e8-b3ea-fff25d603c01",
-    "clientToken": "80b6ac1f-31f7-4789-96f5-5bd0d4488576.lmwAwHEvD0DU8HqhOiOXrD2jzizP5vErw0E/cNxS8OVnikho0hGjYI1YAxLEqnOrqAi+9fG0a+z0YZHnHnfEE+4Y",
+    "clientId": "7b1027b1-788f-4880-b73b-806051e3f921",
+    "clientToken": "217a2aab-c750-45dd-8b30-544eaf9913e3.d7uKaOoX/cf8mL1AzJ0NMWY6+HSUbrInVDYlljChNkc1FkFOPPZe3nDrr3O4EY2hoNTuClSlMvLco/c1/4Tuoixp",
     "channels": {},
-    "webhookToken": "e9NsJviK8EkPFRdkkwjr/AJnfKmbR3HoMd9OL+EjpC21Nx+lmvdZdGXTe9TUBb/zGxc+wBlVYHLCUuSePJWkNN7k"
+    "webhookToken": "mqsyTCg0UwlGqRGYf8GftG34Y7UL9YletaKlWJUqljzailPXe290b2CNe9G/PF5kS+NKvvKDe1hJ1x8K2fiid9Am"
   },
   "cloud": {
     "botId": "6c74a202-3bb4-4cd2-a612-be3e122eaf74",
